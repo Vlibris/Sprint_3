@@ -1,0 +1,16 @@
+$x(".//div[@class='AppHeader_header__logo__2D0X2']") # Логотип Stellar Burgers
+$x(".//button[text()='Войти в аккаунт']") # Кнопка «Войти в аккаунт»
+$x(".//input[@name='name']") # Поле «Email» в окне входа
+$x(".//input[@name='Пароль']") # Поле «Пароль» в окне входа
+$x(".//button[text()='Войти']") # Кнопка «Войти» в форме входа
+$x(".//a[@href='/account']") # Кнопка «Личный Кабинет»
+$x(".//button[@class='button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']") # Кнопка «Войти» в личном кабинете
+$x(".//a[@class='Auth_link__1fOlj']") # Кнопка «Войти» в форме регистрации
+$x(".//a[@class='Auth_link__1fOlj']") # Кнопка «Войти» в форме восстановления пароля
+$x(".//p[text()='Некорректный пароль']") # Текст "Некорректный пароль"
+$x(".//button[text()='Оформить заказ']") # Кнопка «Оформить заказ»
+$x(".//button[@class='Account_button__14Yp3 text text_type_main-medium text_color_inactive']") # Кнопка «Выйти» в личном кабинете
+$x(".//p[text()='Конструктор']") # Кнопка «Конструктор»
+$x(".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']") # Раздел «Булки»
+$x(".//span[text()='Соусы']") # Раздел «Соусы»
+$x(".//span[text()='Начинки']") # Раздел «Начинки»
