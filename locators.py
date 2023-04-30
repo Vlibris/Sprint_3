@@ -6,9 +6,9 @@ class TestLocators:
     PASSWORD_FIELD_LOGIN_FORM = By.XPATH, ".//input[@name='Пароль']"  # Поле «Пароль» в окне входа
     LOGIN_BUTTON_LOGIN_FORM = By.XPATH, ".//button[text()='Войти']"  # Кнопка «Войти» в форме входа
     PERSONAL_ACCOUNT_BUTTON = By.XPATH, ".//a[@href='/account']"  # Кнопка «Личный Кабинет»
-    FIELD_NAME_REGISTRATION_FORM = By.XPATH, ".//label[text()= 'Имя']"  # Поле "Имя" в регистрации
-    FIELD_EMAIL_REGISTRATION_FORM = By.XPATH, ".//label[text()= 'Email']"  # Поле "Email" в регистрации
-    FIELD_PASSWORD_REGISTRATION_FORM = By.XPATH, ".//label[text()= 'Пароль']"  # Поле "Пароль" в регистрации
+    NAME_REGISTRATION_FORM = By.XPATH, "//label[text()='Имя']/following-sibling::input"  # "Имя" в регистрации
+    EMAIL_REGISTRATION_FORM = By.XPATH, "//label[text()='Email']/following-sibling::input"  # "Email" в регистрации
+    PASSWORD_REGISTRATION_FORM = By.XPATH, ".//input[@name= 'Пароль']"  # "Пароль" в регистрации
     REGISTER_BUTTON = By.XPATH, ".//button[text()= 'Зарегистрироваться']"  # Кнопка «Зарегистрироваться»
     LOGIN_BUTTON_REGISTRATION_FORM = By.XPATH, ".//a[text()= 'Войти']"  # Кнопка "Войти" в форме регистрации
     LOGIN_BUTTON_PERSONAL_ACCOUNT = By.XPATH, ".//button[text()='Войти']"  # Кнопка «Войти» в личном кабинете
@@ -16,9 +16,16 @@ class TestLocators:
     TEXT_INCORRECT_PASSWORD = By.XPATH, ".//p[text()='Некорректный пароль']"  # Текст "Некорректный пароль"
     BUTTON_PLACE_ORDER = By.XPATH, ".//button[text()='Оформить заказ']"  # Кнопка «Оформить заказ»
     BUTTON_EXIT_PERSONAL_ACCOUNT = By.XPATH, ".//button[text()='Выход']"  # Кнопка «Выйти» в личном кабинете
+    BUTTON_SAVE_PERSONAL_ACCOUNT = By.XPATH, ".//button[text()='Сохранить']"  # Кнопка «Сохранить» в личном кабинете
     TEXT_LOGIN_LOGIN_FORM = By.XPATH, ".//h2[text()='Вход']"  # Текст «Вход» в форме входа
     BUTTON_CONSTRUCTOR = By.XPATH, ".//p[text()='Конструктор']"  # Кнопка «Конструктор»
-    SECTION_BANS = By.XPATH, ".//span[text()='Булки']"  # Раздел «Булки»
+    SECTION_BUNS = By.XPATH, ".//span[text()='Булки']"  # Раздел «Булки»
     SECTION_SAUCES = By.XPATH, ".//span[text()='Соусы']"  # Раздел «Соусы»
     SECTION_FILLING = By.XPATH, ".//span[text()='Начинки']"  # Раздел «Начинки»
+    ACTIVE_SECTION_BUNS = By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 " \
+                                    "noselect']"  # активен раздел «Булки»
+    ACTIVE_SECTION_SAUCES = By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 " \
+                                      "pl-10 noselect']"  # активен раздел  «Соусы»
+    ACTIVE_SECTION_FILLING = By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 " \
+                                       "pl-10 noselect']"  # активен раздел «Начинки»
 

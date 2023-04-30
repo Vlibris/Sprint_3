@@ -4,7 +4,8 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from locators import TestLocators
 
-class TestEntranceExit():
+
+class TestEntranceExit:
     # Проверка входа через кнопку "Войти в аккаунт", положительный результат
     def test_entrance_button_login_correct_email_and_password_positive_result(self, correct_user):
         driver = webdriver.Chrome()
